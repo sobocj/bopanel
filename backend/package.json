@@ -1,0 +1,63 @@
+{
+  "name": "bopanel-backend",
+  "version": "1.0.0",
+  "description": "BoPanel - Open Source MSP Platform Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup": "node scripts/setup.js",
+    "setup:admin": "node scripts/setup-admin.js",
+    "create:client": "node scripts/create-client.js",
+    "create:user": "node scripts/create-user.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "msp",
+    "ticketing",
+    "monitoring",
+    "rmmm",
+    "sla"
+  ],
+  "author": "Javier Sobo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.2",
+    "redis": "^4.6.10",
+    "jsonwebtoken": "^9.1.2",
+    "bcryptjs": "^2.4.3",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "morgan": "^1.10.0",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1",
+    "nodemailer": "^6.9.7",
+    "node-cron": "^3.0.3",
+    "prom-client": "^15.0.0",
+    "elasticsearch": "^7.13.0",
+    "socket.io": "^4.7.2",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-ldapauth": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
